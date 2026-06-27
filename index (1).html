@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today's ADU Builders | Powered by Today's Marketing Strategies LLC</title>
+<meta name="description" content="Today's ADU Builders connects Washington State property owners and buyers with the most experienced local ADU builders in King and Pierce Counties.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #FDFAF4; color: #333; }
+  
+  /* HEADER */
+  header { background: #1B2A4A; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { color: #C9A84C; font-size: 22px; font-weight: bold; letter-spacing: 1px; }
+  .logo span { color: #fff; font-size: 13px; display: block; font-weight: normal; letter-spacing: 2px; margin-top: 2px; }
+  nav a { color: #C9A84C; text-decoration: none; margin-left: 28px; font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 1px; }
+  nav a:hover { color: #fff; }
+
+  /* HERO */
+  .hero { background: #1B2A4A; color: #fff; padding: 80px 40px; text-align: center; }
+  .hero h1 { font-size: 42px; color: #fff; margin-bottom: 16px; line-height: 1.2; }
+  .hero h1 span { color: #C9A84C; }
+  .hero p { font-size: 20px; color: #ccc; max-width: 700px; margin: 0 auto 36px; font-family: Arial, sans-serif; line-height: 1.6; }
+  .hero-divider { width: 80px; height: 3px; background: #C9A84C; margin: 0 auto 36px; }
+  .hero-sub { font-size: 15px; color: #aaa; font-family: Arial, sans-serif; }
+
+  /* TERRITORY GRID */
+  .territories { padding: 70px 40px; background: #fff; }
+  .territories h2 { text-align: center; font-size: 32px; color: #1B2A4A; margin-bottom: 12px; }
+  .territories .sub { text-align: center; color: #666; font-family: Arial, sans-serif; font-size: 16px; margin-bottom: 48px; }
+  .gold-line { width: 60px; height: 3px; background: #C9A84C; margin: 0 auto 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto; }
+  .card { background: #FDFAF4; border: 1px solid #e0d5c0; border-radius: 6px; padding: 28px 20px; text-align: center; transition: border-color 0.2s; }
+  .card:hover { border-color: #C9A84C; }
+  .card h3 { color: #1B2A4A; font-size: 18px; margin-bottom: 8px; }
+  .card p { color: #888; font-family: Arial, sans-serif; font-size: 13px; margin-bottom: 16px; }
+  .card a { display: inline-block; background: #1B2A4A; color: #C9A84C; padding: 9px 20px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 13px; text-decoration: none; letter-spacing: 1px; }
+  .card a:hover { background: #C9A84C; color: #1B2A4A; }
+  .card.unavailable a { background: #ccc; color: #fff; pointer-events: none; }
+
+  /* HOW IT WORKS */
+  .how { background: #1B2A4A; padding: 70px 40px; color: #fff; }
+  .how h2 { text-align: center; font-size: 32px; color: #C9A84C; margin-bottom: 12px; }
+  .how .sub { text-align: center; color: #aaa; font-family: Arial, sans-serif; font-size: 16px; margin-bottom: 48px; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; max-width: 1000px; margin: 0 auto; }
+  .step { text-align: center; }
+  .step-num { width: 52px; height: 52px; border-radius: 50%; background: #C9A84C; color: #1B2A4A; font-size: 22px; font-weight: bold; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+  .step h3 { color: #fff; font-size: 17px; margin-bottom: 10px; }
+  .step p { color: #aaa; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.6; }
+
+  /* BUILDER CTA */
+  .builder-cta { background: #FDFAF4; padding: 70px 40px; text-align: center; border-top: 3px solid #C9A84C; }
+  .builder-cta h2 { font-size: 30px; color: #1B2A4A; margin-bottom: 16px; }
+  .builder-cta p { color: #666; font-family: Arial, sans-serif; font-size: 16px; max-width: 600px; margin: 0 auto 32px; line-height: 1.6; }
+  .btn-gold { display: inline-block; background: #C9A84C; color: #1B2A4A; padding: 14px 36px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 15px; font-weight: bold; text-decoration: none; letter-spacing: 1px; }
+  .btn-gold:hover { background: #1B2A4A; color: #C9A84C; }
+
+  /* FOOTER */
+  footer { background: #1B2A4A; color: #aaa; padding: 32px 40px; text-align: center; font-family: Arial, sans-serif; font-size: 13px; }
+  footer a { color: #C9A84C; text-decoration: none; }
+  .footer-logo { color: #C9A84C; font-size: 16px; font-weight: bold; margin-bottom: 8px; }
+
+  @media(max-width: 600px) {
+    header { flex-direction: column; gap: 12px; padding: 20px; }
+    .hero h1 { font-size: 28px; }
+    nav a { margin-left: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TODAY'S ADU BUILDERS
+    <span>POWERED BY TODAY'S MARKETING STRATEGIES LLC</span>
+  </div>
+  <nav>
+    <a href="#territories">Territories</a>
+    <a href="#how">How It Works</a>
+    <a href="#builders">For Builders</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Washington State's <span>ADU Lead Generation</span> Network</h1>
+  <div class="hero-divider"></div>
+  <p>Connecting property owners and buyers with the most experienced local ADU builders across King and Pierce Counties.</p>
+  <p class="hero-sub">Select your city below to find your local ADU expert.</p>
+</section>
+
+<section class="territories" id="territories">
+  <h2>Find Your Local ADU Builder</h2>
+  <div class="gold-line"></div>
+  <p class="sub">Each territory is served by one exclusive, experienced local ADU builder.</p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Bellevue</h3>
+      <p>King County — Tier 1</p>
+      <a href="https://bellevueadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Kirkland</h3>
+      <p>King County — Tier 1</p>
+      <a href="https://kirklandadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Redmond</h3>
+      <p>King County — Tier 1</p>
+      <a href="https://redmondadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Issaquah</h3>
+      <p>King County — Tier 1</p>
+      <a href="https://issaquahadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Seattle (North)</h3>
+      <p>King County — Tier 2</p>
+      <a href="https://northseattleadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Seattle (South)</h3>
+      <p>King County — Tier 2</p>
+      <a href="https://southseattleadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Shoreline</h3>
+      <p>King County — Tier 2</p>
+      <a href="https://shorelineadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Renton</h3>
+      <p>King County — Tier 3</p>
+      <a href="https://rentonadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Kent</h3>
+      <p>King County — Tier 3</p>
+      <a href="https://kentadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Auburn</h3>
+      <p>King County — Tier 3</p>
+      <a href="https://auburnadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Federal Way</h3>
+      <p>King County — Tier 3</p>
+      <a href="https://federalwayadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Tukwila</h3>
+      <p>King County — Tier 3</p>
+      <a href="https://tukwilaadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Burien</h3>
+      <p>King County — Tier 3</p>
+      <a href="https://burienadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Tacoma</h3>
+      <p>Pierce County — Tier 3</p>
+      <a href="https://tacomaadubuilder.com">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <h3>Enumclaw</h3>
+      <p>King County — Tier 3</p>
+      <a href="https://enumclawadubuilder.com">Visit Site</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="how" id="how">
+  <h2>How It Works</h2>
+  <div class="gold-line" style="background:#C9A84C;"></div>
+  <p class="sub">Simple. Fast. One qualified local builder for your property.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Select Your City</h3>
+      <p>Choose your territory above to find the exclusive ADU builder serving your area.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Leave Your Information</h3>
+      <p>Fill in your contact details and receive our free ADU Playbook instantly by email.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Your Builder Contacts You</h3>
+      <p>Your local ADU expert reaches out within one business day — no pressure, just answers.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Build & Earn</h3>
+      <p>From first conversation to first rent check — your builder guides every step.</p>
+    </div>
+  </div>
+</section>
+
+<section class="builder-cta" id="builders">
+  <h2>Are You an ADU Builder?</h2>
+  <div class="gold-line"></div>
+  <p>We lease exclusive territories to one qualified builder per city. If your market is still available, we'd like to talk. One territory. All the leads. No competition.</p>
+  <a href="mailto:aducustombuilder@gmail.com" class="btn-gold">Inquire About Territory Availability</a>
+</section>
+
+<footer>
+  <div class="footer-logo">TODAY'S MARKETING STRATEGIES LLC</div>
+  <p>Serving King and Pierce Counties, Washington State</p>
+  <p style="margin-top:8px;"><a href="mailto:aducustombuilder@gmail.com">aducustombuilder@gmail.com</a></p>
+  <p style="margin-top:16px; font-size:11px; color:#666;">© 2026 Today's Marketing Strategies LLC. All rights reserved. | <a href="/broker-intake.html">Builder Portal</a></p>
+</footer>
+
+</body>
+</html>
